@@ -9,10 +9,11 @@ export const Header = () => {
           <img src="/images/logo.png" alt="todo app"></img>
         </div>
         <div className="settings">
-          setting
           <ul>
-            <li>+</li>
-            <li>
+            <li data-testid="quick-add-task-action" className="settings__add">
+              +
+            </li>
+            <li data-testid="dark-mode-action" className="settings__darkmode">
               <FaPizzaSlice />
             </li>
           </ul>
