@@ -9,7 +9,6 @@ export const Tasks = () => {
   const { selectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
   const { tasks } = useTasks(selectedProject);
-  console.log(projects);
   let projectName = "";
 
   if (collatedTasksExist(selectedProject) && selectedProject) {
@@ -31,8 +30,8 @@ export const Tasks = () => {
 
   return (
     <div className="tasks" data-testid="tasks">
-      <h2 data-testid="project-name">projectname</h2>
-      <ul className="task__list">
+      <h2 data-testid="project-name">{projectName}</h2>
+      <ul className="tasks__list">
         {tasks.map(task => (
           <li key={task.id}>
             <Checkbox id={task.id}></Checkbox>

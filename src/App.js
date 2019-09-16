@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "./components/layout/Header";
-import { SideBar } from "./components/layout/SideBar";
-import { Tasks } from "./components/Tasks";
+import { Content } from "./components/layout/Content";
 import "./App.scss";
 import { ProjectsProvider, SelectedProjectProvider } from "./context";
 
@@ -10,9 +9,8 @@ function App() {
     <SelectedProjectProvider>
       <ProjectsProvider>
         <div className="App">
-          <Header />
-          <SideBar />
-          <Tasks />
+          <Header></Header>
+          <Content />
         </div>
       </ProjectsProvider>
     </SelectedProjectProvider>

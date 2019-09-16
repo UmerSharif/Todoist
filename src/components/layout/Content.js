@@ -1,11 +1,11 @@
 import React from "react";
-import { Header } from "./Header";
+import { Tasks } from "../Tasks";
 import { SideBar } from "./SideBar";
 export const Content = () => {
   return (
-    <div>
-      <Header></Header>
+    <section className="content">
       <SideBar />
-    </div>
+      <Tasks />
+    </section>
   );
 };
