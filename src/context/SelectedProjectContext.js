@@ -1,5 +1,5 @@
 import React, { useContext, createContext, useState } from "react";
-import { useProjects } from "../hooks/index";
+
 export const SelectedProjectContext = createContext();
 
 export const SelectedProjectProvider = ({ children }) => {
