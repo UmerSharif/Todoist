@@ -272,7 +272,6 @@ header {
     cursor: pointer;
     padding: 10px 0 10px 0;
 
-
     div:nth-child(1) {
       padding: 5px 0;
       padding-left: 10px;
@@ -328,6 +327,18 @@ header {
     &:nth-child(5) {
       .sidebar__dot {
         color: #af38eb;
+        font-size: 1rem;
+      }
+    }
+    &:nth-child(6) {
+      .sidebar__dot {
+        color: #13d1d1;
+        font-size: 1rem;
+      }
+    }
+    &:nth-child(7) {
+      .sidebar__dot {
+        color: #05853e;
         font-size: 1rem;
       }
     }
@@ -387,29 +398,29 @@ header {
       font-size: 15px;
       padding: 10px 0 10px 0;
 
-      div:nth-child(1) {
+      // div:nth-child(1) {
+      //   display: -webkit-box;
+      //   display: -ms-flexbox;
+      //   display: flex;
+      //   padding: 10px 0 10px 10px;
+      //   width: 100%;
+
+      span:first-of-type {
+        margin-right: 10px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding: 10px 0 10px 10px;
-        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
 
-        span:first-of-type {
-          margin-right: 10px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-
-          svg {
-            width: 18px;
-            height: 18px;
-            color: #555;
-          }
+        svg {
+          width: 18px;
+          height: 18px;
+          color: #555;
         }
       }
+      // }
 
       &.active,
       &:hover {
