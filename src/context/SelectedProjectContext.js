@@ -3,11 +3,11 @@ import { useProjects } from "../hooks/index";
 export const SelectedProjectContext = createContext();
 
 export const SelectedProjectProvider = ({ children }) => {
-  const [SelectedProject, setSelectedProject] = useState("INBOX");
+  const [selectedProject, setSelectedProject] = useState("INBOX");
 
   return (
     <SelectedProjectContext.Provider
-      value={{ SelectedProject, setSelectedProject }}
+      value={{ selectedProject, setSelectedProject }}
     >
       {children}
     </SelectedProjectContext.Provider>
