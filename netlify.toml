@@ -1,4 +1,0 @@
-[build]
-  base    = "todoist"
-  publish = "todoist/build"
-  command = "npm run build"
